@@ -9,3 +9,4 @@ RUN apt-get update -qq && \
         libgdal-dev libatlas-base-dev gfortran libfreetype6-dev
 
 RUN pip install git+https://github.com/mathisonian/landsat-util.git@master
+RUN pip install geopy colormath
