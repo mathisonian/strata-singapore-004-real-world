@@ -6,6 +6,6 @@ USER root
 
 RUN apt-get update -qq && \
     DEBIAN_FRONTEND=noninteractive apt-get install -yq --force-yes \
-        python-numpy python-scipy libgdal-dev libatlas-base-dev gfortran libfreetype6-dev
+        libgdal-dev libatlas-base-dev gfortran libfreetype6-dev
 
-RUN pip install landsat-util
+RUN pip install git+git://github.com/mathisonian/landsat-util.git
